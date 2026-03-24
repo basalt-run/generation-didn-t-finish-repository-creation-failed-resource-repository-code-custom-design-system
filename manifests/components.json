@@ -1,0 +1,838 @@
+{
+  "$schema": "https://basalt.run/schemas/manifest.json",
+  "version": "1.0.0",
+  "generatedAt": "2026-03-24T03:25:03.914Z",
+  "projectId": "3cce2e9a-20d6-49fe-ad9e-8dd93a43ee62",
+  "projectSlug": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system",
+  "projectName": "basalt-run/generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system",
+  "storybookCompatible": true,
+  "components": {
+    "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-alert": {
+      "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-alert",
+      "name": "Alert",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-alert--info",
+          "name": "info",
+          "snippet": "const Info = () => <Alert variant=\"info\" />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-alert--success",
+          "name": "success",
+          "snippet": "const Success = () => <Alert variant=\"success\" />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-alert--warning",
+          "name": "warning",
+          "snippet": "const Warning = () => <Alert variant=\"warning\" />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-alert--error",
+          "name": "error",
+          "snippet": "const Error = () => <Alert variant=\"error\" />;"
+        }
+      ],
+      "import": "import { Alert } from \"@your-org/design-system\";",
+      "description": "Alert communicates contextual information, feedback, or system status with semantic color and icon affordance.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"info\" | \"success\" | \"warning\" | \"error\"",
+          "description": "Visual variant",
+          "defaultValue": "info"
+        }
+      },
+      "basalt": {
+        "projectId": "3cce2e9a-20d6-49fe-ad9e-8dd93a43ee62",
+        "projectSlug": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Alert to surface time-sensitive information that requires immediate user awareness. Display validation errors after form submission, confirm successful operations like payment processing, or notify users of service degradation. Reserve Alerts for messages that demand attention; use inline text for supplementary guidance.",
+        "never": "Don't use Alert for marketing promotions or product education — this dilutes its semantic weight and trains users to ignore genuine system feedback. Use Banner instead.",
+        "a11y": "Set role=\"status\" and aria-live=\"polite\" for dynamic Alerts; role=\"alert\" with aria-live=\"assertive\" only when interruption is critical (e.g., account security warnings). Include descriptive text; color alone is insufficient per WCAG 1.4.1.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-24T03:25:03.628817+00:00"
+      }
+    },
+    "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-avatar": {
+      "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-avatar",
+      "name": "Avatar",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-avatar--default",
+          "name": "default",
+          "snippet": "const Default = () => <Avatar />;"
+        }
+      ],
+      "import": "import { Avatar } from \"@your-org/design-system\";",
+      "description": "Avatar displays a user's profile image, initials, or icon in a circular container.",
+      "props": {},
+      "basalt": {
+        "projectId": "3cce2e9a-20d6-49fe-ad9e-8dd93a43ee62",
+        "projectSlug": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Avatar to represent a person or entity in contexts like user lists, comment threads, or team rosters. Place it alongside names or in tight spaces where full profiles aren't needed. In collaborative tools, Avatars help users quickly identify teammates and track who's interacting with content.",
+        "never": "Don't use Avatar as a clickable element without a wrapping button or link — it breaks keyboard navigation and screen reader expectations. Use Button or Link instead.",
+        "a11y": "Assign role=\"img\" and provide an accessible name via aria-label that describes the person or entity, matching the format 'Name, Title' when context requires it (WCAG 1.1.1).",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-24T03:25:03.628817+00:00"
+      }
+    },
+    "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-badge": {
+      "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-badge",
+      "name": "Badge",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-badge--default",
+          "name": "default",
+          "snippet": "const Default = () => <Badge />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-badge--success",
+          "name": "success",
+          "snippet": "const Success = () => <Badge variant=\"success\" />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-badge--warning",
+          "name": "warning",
+          "snippet": "const Warning = () => <Badge variant=\"warning\" />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-badge--error",
+          "name": "error",
+          "snippet": "const Error = () => <Badge variant=\"error\" />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-badge--info",
+          "name": "info",
+          "snippet": "const Info = () => <Badge variant=\"info\" />;"
+        }
+      ],
+      "import": "import { Badge } from \"@your-org/design-system\";",
+      "description": "Badge communicates small, contextual information or status through color and text.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"default\" | \"success\" | \"warning\" | \"error\" | \"info\"",
+          "description": "Visual variant",
+          "defaultValue": "default"
+        }
+      },
+      "basalt": {
+        "projectId": "3cce2e9a-20d6-49fe-ad9e-8dd93a43ee62",
+        "projectSlug": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Reach for Badge to label feature status (beta, new, deprecated), indicate system states (active, inactive, pending), or tag items for quick scanning. Use it sparingly in dense interfaces—each Badge competes for attention. In a data table, Badge variants distinguish between subscription tiers; in a navigation menu, a single Badge marks the current user's role.",
+        "never": "Don't use Badge as a clickable button or link — it lacks the interaction affordances users expect. Use Button or Link instead.",
+        "a11y": "Badge must have role=\"status\" and aria-live=\"polite\" when conveying dynamic state changes; WCAG 2.1 Level AA requires 4.5:1 color contrast between text and background.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-24T03:25:03.628817+00:00"
+      }
+    },
+    "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-button": {
+      "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-button",
+      "name": "Button",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-button--primary",
+          "name": "primary",
+          "snippet": "const Primary = () => <Button variant=\"primary\" />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-button--secondary",
+          "name": "secondary",
+          "snippet": "const Secondary = () => <Button variant=\"secondary\" />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-button--destructive",
+          "name": "destructive",
+          "snippet": "const Destructive = () => <Button variant=\"destructive\" />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-button--ghost",
+          "name": "ghost",
+          "snippet": "const Ghost = () => <Button variant=\"ghost\" />;"
+        }
+      ],
+      "import": "import { Button } from \"@your-org/design-system\";",
+      "description": "Button initiates an action or navigation when activated.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"primary\" | \"secondary\" | \"destructive\" | \"ghost\"",
+          "description": "Visual variant",
+          "defaultValue": "primary"
+        }
+      },
+      "basalt": {
+        "projectId": "3cce2e9a-20d6-49fe-ad9e-8dd93a43ee62",
+        "projectSlug": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.hover"
+          },
+          {
+            "cssProperty": "gap",
+            "tokenPath": "spacing.3"
+          },
+          {
+            "cssProperty": "gap",
+            "tokenPath": "spacing.5"
+          },
+          {
+            "cssProperty": "border-radius",
+            "tokenPath": "radius.md"
+          },
+          {
+            "cssProperty": "font-size",
+            "tokenPath": "font.size.sm"
+          },
+          {
+            "cssProperty": "font-weight",
+            "tokenPath": "font.weight.medium"
+          }
+        ],
+        "usage": "Use Button whenever users need to trigger a command, submit a form, or navigate to a new context. Primary buttons guide users toward the main action on a page—like submitting a payment or creating a project. Secondary and ghost variants reduce cognitive load by de-emphasizing less critical actions in the same interface.",
+        "never": "Don't use a Button to navigate between pages without changing application state — use a Link component instead. Navigation without state changes should preserve browser history and support standard link interactions.",
+        "a11y": "Button must have role=\"button\" or be a native <button> element, support keyboard activation via Space and Enter keys (WCAG 2.1 2.1.1), and expose its accessible name through visible text or aria-label.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-24T03:25:03.628817+00:00"
+      }
+    },
+    "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-card": {
+      "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-card",
+      "name": "Card",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-card--default",
+          "name": "default",
+          "snippet": "const Default = () => <Card />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-card--elevated",
+          "name": "elevated",
+          "snippet": "const Elevated = () => <Card variant=\"elevated\" />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-card--outlined",
+          "name": "outlined",
+          "snippet": "const Outlined = () => <Card variant=\"outlined\" />;"
+        }
+      ],
+      "import": "import { Card } from \"@your-org/design-system\";",
+      "description": "Card organizes related content and actions into a self-contained container.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"default\" | \"elevated\" | \"outlined\"",
+          "description": "Visual variant",
+          "defaultValue": "default"
+        }
+      },
+      "basalt": {
+        "projectId": "3cce2e9a-20d6-49fe-ad9e-8dd93a43ee62",
+        "projectSlug": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Card when grouping logically related information that benefits from visual separation—such as a settings panel, product listing, or dashboard metric. Cards establish hierarchy and improve scannability in information-dense layouts. Nest interactive elements within Cards to create self-contained, portable UI regions.",
+        "never": "Don't use Card as a generic wrapper for all content sections — it dilutes visual hierarchy and increases cognitive load. Use Card only when content requires explicit visual separation or portability within the layout.",
+        "a11y": "Card must expose semantic structure through appropriate heading hierarchy (h1–h6) and sectioning elements; never rely on visual styling alone to communicate content relationships. Apply role=\"region\" only when Card contains status updates or dynamic content requiring screen reader announcement.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-24T03:25:03.628817+00:00"
+      }
+    },
+    "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-checkbox": {
+      "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-checkbox",
+      "name": "Checkbox",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-checkbox--unchecked",
+          "name": "unchecked",
+          "snippet": "const Unchecked = () => <Checkbox variant=\"unchecked\" />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-checkbox--checked",
+          "name": "checked",
+          "snippet": "const Checked = () => <Checkbox variant=\"checked\" />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-checkbox--indeterminate",
+          "name": "indeterminate",
+          "snippet": "const Indeterminate = () => <Checkbox variant=\"indeterminate\" />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-checkbox--disabled",
+          "name": "disabled",
+          "snippet": "const Disabled = () => <Checkbox variant=\"disabled\" />;"
+        }
+      ],
+      "import": "import { Checkbox } from \"@your-org/design-system\";",
+      "description": "Checkbox captures binary user input with support for indeterminate states in lists or hierarchical selections.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"unchecked\" | \"checked\" | \"indeterminate\" | \"disabled\"",
+          "description": "Visual variant",
+          "defaultValue": "unchecked"
+        }
+      },
+      "basalt": {
+        "projectId": "3cce2e9a-20d6-49fe-ad9e-8dd93a43ee62",
+        "projectSlug": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use checkboxes when users need to select one or more independent options from a set. Reach for checkboxes in settings panels, filter interfaces, and data tables where multiple selections don't affect each other. Use indeterminate state when a parent checkbox represents a partially selected group of child options.",
+        "never": "Don't use checkboxes for mutually exclusive options — this violates user expectations around independent selection. Use Radio Group instead.",
+        "a11y": "Implement role=\"checkbox\" with aria-checked reflecting the current state (true, false, or mixed for indeterminate). Keyboard support requires Space to toggle and Tab to navigate; checked state must be perceivable to screen readers via aria-checked, not visual state alone.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-24T03:25:03.628817+00:00"
+      }
+    },
+    "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-input": {
+      "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-input",
+      "name": "Input",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-input--default",
+          "name": "default",
+          "snippet": "const Default = () => <Input />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-input--error",
+          "name": "error",
+          "snippet": "const Error = () => <Input variant=\"error\" />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-input--disabled",
+          "name": "disabled",
+          "snippet": "const Disabled = () => <Input variant=\"disabled\" />;"
+        }
+      ],
+      "import": "import { Input } from \"@your-org/design-system\";",
+      "description": "Input captures single-line text data from users.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"default\" | \"error\" | \"disabled\"",
+          "description": "Visual variant",
+          "defaultValue": "default"
+        }
+      },
+      "basalt": {
+        "projectId": "3cce2e9a-20d6-49fe-ad9e-8dd93a43ee62",
+        "projectSlug": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Input for brief, focused text entry like usernames, emails, or search queries. Prefer Input over Textarea when content is expected to fit on one line. In a login form, Input fields capture credentials without imposing artificial constraints on entry method.",
+        "never": "Don't use Input to collect multi-line responses — the component will truncate or wrap text unexpectedly. Use Textarea instead.",
+        "a11y": "Input must have role=\"textbox\" and an associated label element with for attribute matching the input's id; without this pairing, screen readers cannot announce the field's purpose (WCAG 2.1 1.3.1).",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-24T03:25:03.628817+00:00"
+      }
+    },
+    "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-modal": {
+      "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-modal",
+      "name": "Modal",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-modal--default",
+          "name": "default",
+          "snippet": "const Default = () => <Modal />;"
+        }
+      ],
+      "import": "import { Modal } from \"@your-org/design-system\";",
+      "description": "Modal presents focused content in a layered dialog that blocks interaction with the page behind it.",
+      "props": {},
+      "basalt": {
+        "projectId": "3cce2e9a-20d6-49fe-ad9e-8dd93a43ee62",
+        "projectSlug": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Reach for Modal when you need user attention or decision on a critical task—confirming destructive actions, gathering required information before proceeding, or presenting time-sensitive alerts. Use it sparingly; modals interrupt workflow and should never be the default interaction pattern. Reserve them for moments where context switching is justified, such as confirming account deletion or resolving a blocking error.",
+        "never": "Don't nest modals within modals — cognitive load compounds and navigation becomes ambiguous. Use a step-based flow or staged Modal instead.",
+        "a11y": "Modal must have role=\"dialog\" and aria-modal=\"true\", trap focus within the dialog until closed, and return focus to the trigger element on dismiss (WCAG 2.1 Level AA, Focus Management).",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-24T03:25:03.628817+00:00"
+      }
+    },
+    "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-navigation": {
+      "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-navigation",
+      "name": "Navigation",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-navigation--default",
+          "name": "default",
+          "snippet": "const Default = () => <Navigation />;"
+        }
+      ],
+      "import": "import { Navigation } from \"@your-org/design-system\";",
+      "description": "Navigation organizes and displays primary structural links for moving between major sections of an application.",
+      "props": {},
+      "basalt": {
+        "projectId": "3cce2e9a-20d6-49fe-ad9e-8dd93a43ee62",
+        "projectSlug": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Navigation as the primary wayfinding system for top-level routes or sections. In a SaaS dashboard, Navigation typically contains links to Projects, Settings, and Team pages. Reserve this component for persistent, first-level destinations rather than contextual or secondary navigation patterns.",
+        "never": "Don't nest Navigation items beyond one level — hierarchical menus create cognitive overhead and complicate keyboard navigation. Use Dropdown or Tabs instead.",
+        "a11y": "Navigation must have role='navigation' and contain a list (role='list') with link items (role='listitem'). Active links require aria-current='page' to indicate the current section.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-24T03:25:03.628817+00:00"
+      }
+    },
+    "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-select": {
+      "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-select",
+      "name": "Select",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-select--default",
+          "name": "default",
+          "snippet": "const Default = () => <Select />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-select--error",
+          "name": "error",
+          "snippet": "const Error = () => <Select variant=\"error\" />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-select--disabled",
+          "name": "disabled",
+          "snippet": "const Disabled = () => <Select variant=\"disabled\" />;"
+        }
+      ],
+      "import": "import { Select } from \"@your-org/design-system\";",
+      "description": "Select presents a list of mutually exclusive options in a compact, triggerable dropdown.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"default\" | \"error\" | \"disabled\"",
+          "description": "Visual variant",
+          "defaultValue": "default"
+        }
+      },
+      "basalt": {
+        "projectId": "3cce2e9a-20d6-49fe-ad9e-8dd93a43ee62",
+        "projectSlug": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Reach for Select when users choose one value from a predefined list of options—filtering search results, selecting a country during checkout, or choosing a time zone in account settings. Select reduces cognitive load by hiding options until invoked, making it ideal for lists longer than five items. Prefer Select over Radio when space is constrained or options exceed what fits comfortably on screen.",
+        "never": "Don't populate Select with dynamic options that change based on asynchronous requests without a loading state — users won't know whether the dropdown is still fetching or empty. Use Combobox instead, which handles async data and user input together.",
+        "a11y": "Select must expose role=\"listbox\" with aria-expanded toggled on trigger interaction. Each option requires role=\"option\" with aria-selected reflecting current state. Keyboard users must navigate options with Arrow Up/Down and confirm with Enter or Space, per WCAG 2.1 criterion 2.1.1.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-24T03:25:03.628817+00:00"
+      }
+    },
+    "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-table": {
+      "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-table",
+      "name": "Table",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-table--default",
+          "name": "default",
+          "snippet": "const Default = () => <Table />;"
+        }
+      ],
+      "import": "import { Table } from \"@your-org/design-system\";",
+      "description": "Table displays structured data in rows and columns with built-in support for sorting, selection, and progressive disclosure.",
+      "props": {},
+      "basalt": {
+        "projectId": "3cce2e9a-20d6-49fe-ad9e-8dd93a43ee62",
+        "projectSlug": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Table when presenting tabular data that users need to scan, compare, or act upon—such as transaction lists, user rosters, or inventory catalogs. Table is preferred over custom grid layouts because it semantically encodes relationships between data points and provides consistent keyboard navigation out of the box.",
+        "never": "Don't use Table to display data with highly variable column widths or deeply nested hierarchies — this creates alignment breaks and cognitive load. Use a card-based list or tree component instead.",
+        "a11y": "Implement role=\"table\" with proper role=\"row\" and role=\"cell\" or role=\"columnheader\" semantics; ensure header cells use scope=\"col\" or scope=\"row\" attributes to programmatically associate data cells with their headers per WCAG 1.3.1.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-24T03:25:03.628817+00:00"
+      }
+    },
+    "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-tabs": {
+      "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-tabs",
+      "name": "Tabs",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-tabs--default",
+          "name": "default",
+          "snippet": "const Default = () => <Tabs />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-tabs--pills",
+          "name": "pills",
+          "snippet": "const Pills = () => <Tabs variant=\"pills\" />;"
+        }
+      ],
+      "import": "import { Tabs } from \"@your-org/design-system\";",
+      "description": "Tabs organize related content into separate views within a single context.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"default\" | \"pills\"",
+          "description": "Visual variant",
+          "defaultValue": "default"
+        }
+      },
+      "basalt": {
+        "projectId": "3cce2e9a-20d6-49fe-ad9e-8dd93a43ee62",
+        "projectSlug": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Tabs when presenting multiple categories of related information that users need to switch between—such as account settings split into Profile, Billing, and Security sections. Tabs work best with 2–5 primary options; beyond that, consider alternative navigation patterns. Choose Tabs over accordion-style components when users benefit from seeing that multiple sections exist without scrolling.",
+        "never": "Don't nest Tabs within Tabs — cognitive load increases exponentially and keyboard navigation becomes fragmented. Use a flat hierarchy or a different navigation pattern like a sidebar instead.",
+        "a11y": "Implement role=\"tablist\" on the container, role=\"tab\" on each trigger with aria-selected reflecting active state, and role=\"tabpanel\" on content areas with aria-labelledby linking to the corresponding tab. Support arrow key navigation (Left/Right or Up/Down) to move focus between tabs, with Enter or Space activating selection.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-24T03:25:03.628817+00:00"
+      }
+    },
+    "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-toggle": {
+      "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-toggle",
+      "name": "Toggle",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-toggle--on",
+          "name": "on",
+          "snippet": "const On = () => <Toggle variant=\"on\" />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-toggle--off",
+          "name": "off",
+          "snippet": "const Off = () => <Toggle variant=\"off\" />;"
+        },
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-toggle--disabled",
+          "name": "disabled",
+          "snippet": "const Disabled = () => <Toggle variant=\"disabled\" />;"
+        }
+      ],
+      "import": "import { Toggle } from \"@your-org/design-system\";",
+      "description": "Toggle switches a single boolean state between on and off.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"on\" | \"off\" | \"disabled\"",
+          "description": "Visual variant",
+          "defaultValue": "on"
+        }
+      },
+      "basalt": {
+        "projectId": "3cce2e9a-20d6-49fe-ad9e-8dd93a43ee62",
+        "projectSlug": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use toggles for binary settings that take effect immediately, such as enabling notifications or activating a feature flag. Toggles are preferred over checkboxes when the control represents a mode or state change rather than a form submission. Reach for toggles in settings panels, feature gates, and real-time preference controls.",
+        "never": "Don't use a toggle to replace a checkbox in a form — checkboxes clearly belong within a form submission context. Use Checkbox instead.",
+        "a11y": "Implement role=\"switch\" with aria-checked=\"true\" or aria-checked=\"false\" reflecting the current state. Keyboard users must toggle state with Space or Enter.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-24T03:25:03.628817+00:00"
+      }
+    },
+    "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-tooltip": {
+      "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-tooltip",
+      "name": "Tooltip",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system-tooltip--default",
+          "name": "default",
+          "snippet": "const Default = () => <Tooltip />;"
+        }
+      ],
+      "import": "import { Tooltip } from \"@your-org/design-system\";",
+      "description": "Tooltip displays supplementary information on hover or focus, anchored to a trigger element.",
+      "props": {},
+      "basalt": {
+        "projectId": "3cce2e9a-20d6-49fe-ad9e-8dd93a43ee62",
+        "projectSlug": "basalt-run-generation-didn-t-finish-repository-creation-failed-resource-repository-code-custom-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Tooltip to clarify UI affordances without cluttering the interface—such as explaining what a button does or providing context for a disabled field. Reserve Tooltips for truly supplementary content; if information is essential to task completion, integrate it directly into the interface instead.",
+        "never": "Don't use Tooltip to display critical information required to understand the interface — users on touch devices or with keyboard navigation may never trigger it. Use inline help text or persistent labels instead.",
+        "a11y": "Implement role=\"tooltip\" on the tooltip element and set aria-describedby on the trigger to reference the tooltip's id; tooltip must remain hidden (display: none) until explicitly shown and must hide when trigger loses focus or after user interaction completes.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-24T03:25:03.628817+00:00"
+      }
+    }
+  }
+}
